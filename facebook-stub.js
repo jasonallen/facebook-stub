@@ -133,6 +133,10 @@
     }
   };
 
+  var Event = {
+    subscribe: function(name, cb) {}
+  };
+
   FB = { // Emulates the FB API
     getLoginStatus : getLoginStatus,
     logout         : logout,
@@ -141,6 +145,7 @@
     getSession     : getSession,
     api            : api,
     XFBML          : XFBML,
+    Event          : Event,
     getUserID      : getUserID
   };
 
